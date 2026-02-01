@@ -77,7 +77,9 @@ def plot_samples(
     
     if save_path:
         plt.savefig(save_path, dpi=150, bbox_inches='tight')
+    
     plt.show()
+    plt.close()  # Free memory resources
 
 
 def create_dataloader(
